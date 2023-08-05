@@ -1,0 +1,50 @@
+/* BookTable styles */
+.tableContainer{
+  display: flex;
+  justify-content: center;
+}
+.table{
+  max-width: 80%;
+  color: hsl(210, 19%, 79%);
+  border: 1px solid lightblue;
+  
+}
+.thead {
+  color: black;
+}
+.editButton{
+  margin: auto 20px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  background-color: #89cff0;
+  color: black;
+}
+.deleteButton{
+  margin: auto 20px;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+.title{
+  font-size: larger;
+  font-weight: bold;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+@media (max-width: 479px) {
+  .table{
+    border: none;
+    .editButton{
+      padding: 0;
+      background-color: transparent;
+      color: #ffffff;
+    }
+    .deleteButton{
+      padding: 0;
+      background-color: transparent;
+      color: #ffffff;
+    }
+  }
+  .tableContainer{
+    table-layout: auto
+  }
+}
+

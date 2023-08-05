@@ -1,0 +1,93 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212
+}
+
+/* App styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.inputFields {
+  margin-block-end: 30px;
+}
+
+/* BookTable styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  max-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+table th {
+  background-color: transparent;
+  text-align: center;
+  color: #ffffff;
+}
+
+table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: small;
+}
+
+@media (max-width: 479px) {
+  .container {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0 5px;
+  }
+
+  .inputFields {
+    margin-block-end: 10px;
+  }
+  table button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+  }
+  table td {
+    max-width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  table th {
+    display: none;
+  }
+  table tr {
+    border: 1px solid white;
+    background-color: #4b5162;
+  }
+}
